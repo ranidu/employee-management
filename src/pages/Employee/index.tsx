@@ -44,7 +44,7 @@ const schema = yup
     phoneNumber: yup
       .string()
       .required('Phone number is a required field')
-      .matches(/[6|8|9]\d{7}|\+65[6|8|9]\d{7}|\+65\s[6|8|9]\d{7}/, {
+      .matches(/^[6|8|9]\d{7}|\+65[6|8|9]\d{7}|\+65\s[6|8|9]\d{7}/, {
         message: "Phone number should be in valid format",
       }),
   })
